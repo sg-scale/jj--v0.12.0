@@ -14,9 +14,9 @@ jobs:
     name: nix-build
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
-      - uses: DeterminateSystems/nix-installer-action@cd46bde16ab981b0a7b2dce0574509104543276e
-      - uses: DeterminateSystems/magic-nix-cache-action@1402a2dd8f56a6a6306c015089c5086f5e1ca3ef
+      - uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa
+      - uses: DeterminateSystems/magic-nix-cache-action@f69a2d3e148e90223fe63ab6e3f6331f2e7e33dc
       - run: nix build --print-build-logs --show-trace

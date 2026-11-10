@@ -13,8 +13,8 @@ jobs:
     name: Codespell
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
-      - uses: codespell-project/actions-codespell@94259cd8be02ad2903ba34a22d9c13de21a74461
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: codespell-project/actions-codespell@8f01853be192eb0f849a5c7d721450e7a467c579
         with:
           check_filenames: true
           check_hidden: true
